@@ -64,7 +64,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\CollisionsDetectors.cs" />
+    <Compile Include="Assets\Scripts\FuelModule.cs" />
+    <Compile Include="Assets\Scripts\FullSystemDetector.cs" />
     <Compile Include="Assets\Scripts\GeneratorVehicles.cs" />
+    <Compile Include="Assets\Scripts\StopDetector.cs" />
     <Compile Include="Assets\Scripts\Vehicles.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/NILSO/service station simulation/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

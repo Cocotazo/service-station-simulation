@@ -14,6 +14,41 @@ TagManager:
   - generatorThree
   - milestoneFour
   - milestoneFive
+  - milestoneTwoA
+  - milestoneTwoB
+  - milestoneTwoC
+  - milestoneFinalA
+  - milestoneFinalB
+  - milestoneFinalC
+  - milestoneFinalE
+  - milestoneFinalD
+  - milestoneFinalF
+  - occupyVerify
+  - fuelModuleB
+  - fuelModuleC
+  - fuelModuleD
+  - fuelModuleE
+  - fuelModuleF
+  - car
+  - milestoneOneA
+  - milestoneTwoA1
+  - milestoneTwoB1
+  - milestoneTwoC1
+  - milestoneFinalB1
+  - milestoneFinalC1
+  - milestoneFinalD1
+  - milestoneFinalE1
+  - milestoneFinalF1
+  - milestoneFinal
+  - milestoneFinal1
+  - milestoneFinal2
+  - milestoneTwoB2
+  - milestoneTwoC2
+  - milestoneFinalB2
+  - milestoneFinalC2
+  - milestoneFinalD2
+  - milestoneFinalE2
+  - milestoneFinalF2
   layers:
   - Default
   - TransparentFX

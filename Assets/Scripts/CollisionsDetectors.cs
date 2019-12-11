@@ -4,28 +4,41 @@ using UnityEngine;
 
 public class CollisionsDetectors : MonoBehaviour
 {
-
-    //public GameObject gameObject;
-    // Start is called before the first frame update
+    
     void Start()
     {
         
     }
-
-    // Update is called once per frame
+        
     void Update()
     {
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        gameObject.transform.parent.gameObject.SendMessage("inCollision");
-        Debug.Log("collision");
+        Vehicles vehicleColision = other.gameObject.transform.parent.GetComponentInChildren<Vehicles>();
+        if (vehicleColision)
+        {
+            gameObject.transform.parent.gameObject.SendMessage("stayCollision", vehicleColision.speedToMilestone);
+        }
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerStay(Collider other)
     {
-        gameObject.transform.parent.gameObject.SendMessage("outCollision");
+        Vehicles vehicleColision = other.gameObject.transform.parent.GetComponentInChildren<Vehicles>();
+        if (vehicleColision)
+        {
+            gameObject.transform.parent.gameObject.SendMessage("stayCollision", vehicleColision.speedToMilestone);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        Vehicles vehicleColision = other.gameObject.transform.parent.GetComponentInChildren<Vehicles>();
+        if (vehicleColision)
+        {
+            gameObject.transform.parent.gameObject.SendMessage("outCollision", vehicleColision.speedToMilestone);
+        }
     }
 }
